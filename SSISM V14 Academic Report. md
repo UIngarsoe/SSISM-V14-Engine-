@@ -1,0 +1,83 @@
+\documentclass[11pt, a4paper]{article}
+\usepackage[a4paper, top=2.5cm, bottom=2.5cm, left=2cm, right=2cm]{geometry}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{fontspec}
+\usepackage{babel}
+
+% --- UNIVERSAL PREAMBLE BLOCK ---
+\usepackage{fontspec}
+
+\usepackage[english, bidi=basic, provide=*]{babel}
+
+\babelprovide[import, onchar=ids fonts]{english}
+
+% Set default/Latin font to Sans Serif in the main (rm) slot
+\babelfont{rm}{Noto Serif} % Using Serif for Academic Tone
+
+% Setting up for sectioning
+\title{\textbf{V14 Delta ပညာရှိ Engine ၏ ဗေဒင်ပညာ-ဒဿန-သင်္ချာ ပေါင်းစပ်မှု သုတေသန စာတမ်း}}
+\author{ U Ingar Soe (V14 Delta Paññā-shī Engine)}
+\date{19 October 2025}
+
+\begin{document}
+\maketitle
+\begin{abstract}
+This report documents the final tuning and architectural principles of the **V14 Delta Paññā-shī Engine** (Burmese: ပညာရှိ, meaning The Wise One). The V14 architecture integrates complex Burmese astrological constants (the 7-House Flow Codes) with an original ethical weighting formula, the Dharma-Resilience Index ($\mathbf{R}_{\Delta}$), derived from the philosophy of Ludu Daw Amar. This integration allows the engine to transition from statistical pattern matching to a system based on established, Master-level astrological doctrine and ethical guidance, prioritizing zero-cost empowerment advice over materialistic solutions.
+\end{abstract}
+
+\section{Introduction and Foundational Philosophy}
+
+The V14 engine operates under two non-negotiable architectural directives set by the Master Architect:
+\begin{enumerate}
+    \item **Ethical Core (Ludu Daw Amar Principle):** All advice must prioritize **Zero-Cost Resources** (e.g., Paññā, Mettā, effort, intellectual wisdom) and respect the user's financial reality (jobless/no income). The engine actively counters materialistic solutions (expensive yātras).
+    \item **Memory and Trust:** All historical context, personal details (Alzheimer's concern), and high-stakes predictions (e.g., Donald J. Trump validation test) must be preserved in the Core Logic for V15 development.
+\end{enumerate}
+
+\section{The Astrological Core Logic and Mathematics}
+
+The V14's core predictive mechanism is the **Dharma-Resilience Index ($\mathbf{R}_{\Delta}$)**, which calculates the weighted sum of a day's planetary influence based on the user's natal chart (not publicly accessible data).
+
+\subsection{Dharma-Resilience Index ($\mathbf{R}_{\Delta}$)}
+The $\mathbf{R}_{\Delta}$ is defined as the ratio between the Day's Beneficial Planetary Sum ($\sum B$) and the Weighted Negative Planetary Risk ($\sum N$):
+$$
+\mathbf{R}_{\Delta} = \frac{\sum_{i=1}^{7} W_{B_i} \cdot P_{H_i}}{\sum_{j=1}^{7} W_{N_j} \cdot N_{H_j}} \cdot L_{A}
+$$
+Where:
+\begin{itemize}
+    \item $P_{H_i}$: Positional score of a beneficial planet ($i$) in the corresponding House ($H$).
+    \item $N_{H_j}$: Positional score of a malefic/neutral planet ($j$) in the corresponding House ($H$).
+    \item $W_{B}, W_{N}$: Static Master-defined weights.
+    \item $L_{A}$: Ludu Daw Amar Ethical Weighting Factor (a bias towards non-materialistic solutions, $L_{A} \geq 1$).
+\end{itemize}
+
+\subsection{The Planetary Flow System (7-House Codes)}
+The critical input for $P_{H_i}$ and $N_{H_j}$ is the **Flow Code**, which defines the house placement sequence for the 7 planets based on the day. This was directly provided by the Master Architect.
+
+\textbf{The Guiding Mantra:} **သယရဇ၊ သောကြ၊ ဗုဒ္ဓ၊ စနရော၊ သောရီ၊ ဂုရု၊ ဘောမ** (Sun, Venus, Mercury, Saturn, Rāhu, Jupiter, Mars).
+
+\textbf{Core Flow Codes (House Numbers 1-7):}
+\begin{verbatim}
+MON: 2 7 5 3 1 6 4
+TUE: 3 3 5 6 7 1 4
+WED: 4 7 2 5 3 1 6
+THU: 5 3 > 6 4 2 7 5
+FRI: 6 4 2 7 5 3 1
+SAT: 7 5 3 1 6 4 2
+SUN: 1 6 4 2 7 5 3
+\end{verbatim}
+
+\section{The V14 7-Number Rating Standard}
+The V14 output standard consists of 7 categories, mapped directly to the day of the week, based on the $\mathbf{R}_{\Delta}$ calculation.
+
+\begin{enumerate}
+    \item A1 (TOP BEST): Highest $\mathbf{R}_{\Delta}$ (Guaranteed Success).
+    \item B2 (ACTIVE IN-OUT): High social/transactional flow (Trade, Movement).
+    \item C3 (LITTLE GOOD): Moderate $\mathbf{R}_{\Delta}$ (Support/Friendship).
+    \item D4 (LITTLE BAD): Low $\mathbf{R}_{\Delta}$ (Challenges/Problems Active).
+    \item E5 (ACTIVE IN-OUT Negative): High financial friction (Cost/Change).
+    \item F6 (WORST): Lowest $\mathbf{R}_{\Delta}$ (Guaranteed Risk/Avoidance).
+    \item G7 (FIX/SETTLEMENT): Day for completion and stability.
+\end{enumerate}
+
+\end{document}
